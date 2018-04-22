@@ -1,0 +1,36 @@
+<section id="contact" class="contact bg-primary">
+  <h3>My Google Maps Demo</h3>
+      <div id="map"></div>
+      <script>
+        function initMap() {
+          var uluru = {lat: -25.363, lng: 131.044};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp7Du8u0PNxuX7ZiY3b4WPVIrcTMJ87Y8&callback=initMap">
+      </script>
+
+
+  <div class="container">
+    <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+    <ul class="list-inline list-social">
+      <li class="social-twitter">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="social-facebook">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="social-google-plus">
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+      </li>
+    </ul>
+  </div>
+</section>
